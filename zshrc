@@ -20,6 +20,9 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
+# sourcing of other files
+source $HOME/dev/dotfiles/zsh/prompt
+
 # makes color constants available
 autoload -U colors
 colors
