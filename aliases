@@ -35,5 +35,7 @@ alias gco="git checkout"
 alias gcp="gc -p"
 alias gst="git status"
 
+alias irc="LANG=en_US.UTF-8 mosh hannes@november.openminds.be --server=/opt/mosh/bin/mosh-server -- screen -rd irssi"
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
