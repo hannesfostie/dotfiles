@@ -22,5 +22,18 @@ alias m="migrate"
 alias rk="rake"
 alias s="rspec"
 
+# Git
+alias g="git"
+alias ga="git add"
+alias gb="git branch"
+alias gc="git commit"
+alias gp="git push"
+alias gl="git pull"
+alias gap="ga -p"
+alias gba="gb -a"
+alias gco="git checkout"
+alias gcp="gc -p"
+alias gst="git status"
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
