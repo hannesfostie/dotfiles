@@ -99,5 +99,8 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
