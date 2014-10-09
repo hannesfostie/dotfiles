@@ -29,3 +29,6 @@
   template = ~/.gitmessage
 [fetch]
   prune = true
+[user]
+	email = hannes.fostie@gmail.com
+	name = Hannes Fostie
