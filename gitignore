@@ -10,3 +10,5 @@ tmp/**/*
 !tmp/cache/.keep
 Procfile.*
 Procfile
+vendor/bundle
+.ruby-version
