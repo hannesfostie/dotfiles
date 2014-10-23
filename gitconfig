@@ -30,5 +30,8 @@
 [fetch]
   prune = true
 [user]
-	email = hannes.fostie@gmail.com
-	name = Hannes Fostie
+  email = hannes.fostie@gmail.com
+  name = Hannes Fostie
+[branch]
+  autosetuprebase = always
+  autosetupmerge = true
