@@ -99,6 +99,14 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
+# load chruby if available
+if [[ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]]; then
+  source /usr/local/opt/chruby/share/chruby/chruby.sh
+  source /usr/local/opt/chruby/share/chruby/auto.sh
+else
+  echo "Ain't got no chruby"
+fi
+
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
