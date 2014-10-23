@@ -99,12 +99,9 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
-# load chruby if available
-if [[ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]]; then
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source /usr/local/opt/chruby/share/chruby/auto.sh
-else
-  echo "Ain't got no chruby"
+# load rbenv if available
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init - --no-rehash)"
 fi
 
 export LANG="en_US.UTF-8"
