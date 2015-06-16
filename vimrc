@@ -90,6 +90,9 @@ if executable('ag')
 
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
+
+  " Use the_silver_searcher with ack.vim
+  let g:ackprg = 'ag --nogroup --nocolor --column'
 endif
 
 " Color scheme
