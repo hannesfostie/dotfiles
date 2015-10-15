@@ -40,5 +40,7 @@ alias gst="git status"
 alias irc="LANG=en_US.UTF-8 mosh hannes@november.openminds.be --server=/opt/mosh/bin/mosh-server -- screen -rd irssi"
 alias fm="foreman start -f Procfile.dev"
 
+alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local

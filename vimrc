@@ -13,8 +13,11 @@ set history=50
 set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
+set hlsearch      " highlight matches
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
+set lazyredraw    " Only redraw when really needed. Faster macros!
+set showmatch     " Highlight matching parentesis
 
 " Share clipboard from vim with OSX
 set clipboard=unnamed

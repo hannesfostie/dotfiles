@@ -29,6 +29,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/tComment'
+Plugin 'elixir-lang/vim-elixir'
 
 Plugin 'danro/rename.vim'
 Plugin 'tomasr/molokai'
