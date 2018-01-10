@@ -28,6 +28,7 @@ alias g="git"
 alias ga="git add"
 alias gb="git branch"
 alias gc="git commit -v"
+alias gd="git diff"
 alias gca="gc -a"
 alias gp="git push"
 alias gl="git pull --rebase"
@@ -37,8 +38,12 @@ alias gco="git checkout"
 alias gcp="gc -p"
 alias gst="git status"
 
-alias irc="LANG=en_US.UTF-8 mosh hannes@november.openminds.be --server=/opt/mosh/bin/mosh-server -- screen -rd irssi"
-alias fm="foreman start -f Procfile.dev"
+# Heroku
+alias h="heroku"
+alias hr="h run"
+alias hrc="hr console"
+alias hl="h local"
+alias hlw="hl web"
 
 alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 
