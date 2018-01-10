@@ -115,8 +115,33 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="$PATH:/usr/local/lib/node_modules"
 source $(brew --prefix nvm)/nvm.sh
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh --no-rehash)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init - zsh --no-rehash)"
+
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby 2.4.2
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Added by Postgres.app
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+### Added by Java JDK
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
+
+### Go stuff
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/golang
+export PATH=$PATH:$GOPATH/bin
+
+### Export all command history with date and folder
+### https://spin.atomicobject.com/2016/05/28/log-bash-history/
+export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
+
+### ion-client shell support
+cloud() {
+  eval "$(ion-client shell)"
+  cloud "$@"
+}
