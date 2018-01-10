@@ -100,9 +100,9 @@ _load_settings() {
 _load_settings "$HOME/.zsh/configs"
 
 # load rbenv if available
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init - --no-rehash)"
-fi
+# if which rbenv &>/dev/null ; then
+#   eval "$(rbenv init - --no-rehash)"
+# fi
 
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
