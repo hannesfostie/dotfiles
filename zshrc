@@ -132,8 +132,7 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
 
 ### Go stuff
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=$HOME/golang
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 ### Export all command history with date and folder
