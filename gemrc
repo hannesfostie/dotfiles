@@ -3,8 +3,6 @@
 :bulk_threshold: 1000
 :sources:
 - https://rubygems.org/
-- https://gems.openminds.be
-- https://bc716c922f722a48359da1898982d34f058933a20b6bc6cf:@packagecloud.io/heroku/gemgate/
 :update_sources: true
 :verbose: true
 gem: "--no-document"

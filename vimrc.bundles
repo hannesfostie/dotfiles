@@ -31,6 +31,7 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/tComment'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'isRuslan/vim-es6'
+Plugin 'fatih/vim-go'
 
 Plugin 'danro/rename.vim'
 Plugin 'tomasr/molokai'
