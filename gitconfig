@@ -27,3 +27,11 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[user]
+  email = hannes.fostie@gmail.com
+  name = Hannes Fostie
+[branch]
+  autosetuprebase = always
+  autosetupmerge = true
+[credential]
+  helper = osxkeychain

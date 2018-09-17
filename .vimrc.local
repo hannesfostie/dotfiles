@@ -1,0 +1,22 @@
+set hlsearch          " highlight matches
+set lazyredraw        " Only redraw when really needed. Faster macros!
+set showmatch         " Highlight matching parentesis
+set clipboard=unnamed " Share clipboard from vim with OSX
+set relativenumber
+
+" Removes trailing spaces
+function! TrimWhiteSpace()
+  %s/\s\+$//e
+endfunction
+
+" Automatically remove trailing spaces on save etc
+autocmd FileWritePre    * :call TrimWhiteSpace()
+autocmd FileAppendPre   * :call TrimWhiteSpace()
+autocmd FilterWritePre  * :call TrimWhiteSpace()
+autocmd BufWritePre     * :call TrimWhiteSpace()
+
+if executable('ag')
+  let g:ackprg = 'ag --nogroup --nocolor --column'
+endif
+
+colorscheme molokai
