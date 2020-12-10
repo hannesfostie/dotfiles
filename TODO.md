@@ -11,3 +11,4 @@ from brew:
 * chruby
 * heroku
 * ruby-build
+* libsodium
