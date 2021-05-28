@@ -15,6 +15,7 @@ alias gba="gb -a"
 alias gco="git checkout"
 alias gcp="gc -p"
 alias gst="git status"
+alias gbr="git recent"
 
  # Heroku
 alias h="heroku"

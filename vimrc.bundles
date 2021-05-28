@@ -39,6 +39,7 @@ Plug 'vim-scripts/tComment'
 Plug 'tomasr/molokai'
 Plug 'altercation/vim-colors-solarized'
 Plug 'mileszs/ack.vim'
+Plug 'lepture/vim-jinja'
 
 if g:has_async
   Plug 'w0rp/ale'
